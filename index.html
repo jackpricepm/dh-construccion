@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DH Construcción y Remodelaciones - Bogotá</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#7086a1",
+                        "tertiary-fixed": "#d1e4ff",
+                        "primary-fixed-dim": "#bac8dc",
+                        "primary": "#000000",
+                        "primary-container": "#0f1c2c",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-primary-fixed": "#0f1c2c",
+                        "surface-container-highest": "#e2e2e2",
+                        "outline": "#74777d",
+                        "inverse-surface": "#2f3131",
+                        "on-tertiary-fixed-variant": "#334861",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "on-primary-container": "#778598",
+                        "secondary": "#a83900",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "surface-container-low": "#f3f3f3",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#031d34",
+                        "primary-fixed": "#d6e4f9",
+                        "surface-tint": "#525f71",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container": "#eeeeee",
+                        "secondary-fixed": "#ffdbce",
+                        "on-secondary-fixed-variant": "#802a00",
+                        "on-secondary-container": "#5b1b00",
+                        "on-secondary-fixed": "#380d00",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-container": "#fe6a2a",
+                        "outline-variant": "#c4c6cc",
+                        "secondary-fixed-dim": "#ffb59a",
+                        "tertiary-fixed-dim": "#b2c8e7",
+                        "tertiary": "#000000",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#44474c",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-fixed": "#031d34",
+                        "inverse-primary": "#bac8dc",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "80px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "caption": ["Inter"],
+                        "headline-xl": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-xl-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-bold": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 10px 30px rgba(13, 27, 42, 0.08);
+        }
+        .btn-primary {
+            background-color: #FF6B2B;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #e55a1f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 43, 0.3);
+        }
+        .btn-outline {
+            border: 2px solid #0D1B2A;
+            color: #0D1B2A;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background-color: #0D1B2A;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        .btn-outline-white {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-white:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-surface-container-highest shadow-md dark:shadow-none fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-on-primary-fixed tracking-tight">
+                DH Construcción
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors duration-200" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors duration-200" href="#proyectos">Proyectos</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors duration-200" href="#resenas">Reseñas</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary transition-colors duration-200" href="#contacto">Contacto</a>
+</div>
+<div class="hidden md:block">
+<a class="btn-primary px-6 py-2 rounded font-label-bold text-label-bold inline-block" href="#contacto">
+                    Solicitar Cotización
+                </a>
+</div>
+<!-- Mobile menu button placeholder -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-24 md:pt-0 min-h-screen flex items-center justify-center bg-primary-container overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5VoIvciJliw5oO1uma4j2Tg53a4CAKNhhk-d4XhHk8Y8_nk22w9t1l-HTVYN4Uzbk4Gz9BF48oMyJH1sMd1MC_hjk3JuTeG7crIZYY02iz93XI28U-PMlCw2dqYTIMRYP1UpKmdmqigqvtqA9GXG5NcGGJsHZLWakrRHqRNhZfHKnsERgaAzRDCyjC5GHFSmmNYvG9JalkknvXCm43StVR-smjdnglAZiGMNrTQD2VqZSRtYXV37PPQaW1PrGhaqgKvWcvPWnoLc"/>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto mt-16 md:mt-0">
+<div class="inline-block bg-[#FF6B2B] text-white px-4 py-1 rounded-full text-caption font-caption font-bold mb-stack-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">check_circle</span>
+                Más de 10 proyectos reseñados en Bogotá
+            </div>
+<h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-on-primary mb-stack-md drop-shadow-lg">
+                ¿Listo para transformar tu hogar en el espacio que siempre soñaste?
+            </h1>
+<p class="text-body-lg font-body-lg text-inverse-on-surface mb-stack-lg max-w-2xl mx-auto">
+                Remodelaciones, construcción y reformas en Bogotá con entrega a tiempo y calidad garantizada.
+            </p>
+<div class="flex flex-col sm:flex-row gap-stack-md justify-center items-center">
+<a class="btn-primary w-full sm:w-auto px-8 py-4 rounded text-label-bold font-label-bold shadow-lg flex items-center justify-center gap-2" href="#contacto">
+                    Solicitar cotización gratis <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="btn-outline-white w-full sm:w-auto px-8 py-4 rounded text-label-bold font-label-bold flex items-center justify-center" href="#proyectos">
+                    Ver nuestros proyectos
+                </a>
+</div>
+<!-- Trust Bar -->
+<div class="mt-section-gap flex flex-wrap justify-center gap-stack-lg text-on-primary opacity-90 border-t border-white/20 pt-stack-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#FF6B2B]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-bold font-label-bold">4.1 Google</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#FF6B2B]">location_on</span>
+<span class="text-label-bold font-label-bold">Bogotá</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#FF6B2B]">chat</span>
+<span class="text-label-bold font-label-bold">WhatsApp</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Trust Metrics -->
+<section class="bg-[#0f1c2c] py-stack-lg px-margin-mobile md:px-margin-desktop border-b border-white/10">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-stack-md text-center">
+<div class="p-4">
+<div class="text-headline-md font-headline-md text-white mb-2">100%</div>
+<div class="text-caption font-caption text-on-primary-container">Entregados a tiempo</div>
+</div>
+<div class="p-4 border-l border-white/10">
+<div class="text-headline-md font-headline-md text-white mb-2 flex justify-center items-center gap-1">
+<span class="material-symbols-outlined text-[#FF6B2B]" style="font-variation-settings: 'FILL' 1;">star</span> 4.1
+                </div>
+<div class="text-caption font-caption text-on-primary-container">Google Reviews</div>
+</div>
+<div class="p-4 md:border-l border-white/10">
+<div class="text-headline-md font-headline-md text-white mb-2 flex justify-center items-center gap-1">
+<span class="material-symbols-outlined text-[#FF6B2B]">location_on</span>
+</div>
+<div class="text-caption font-caption text-on-primary-container">Cobertura Bogotá</div>
+</div>
+<div class="p-4 border-l border-white/10">
+<div class="text-headline-md font-headline-md text-white mb-2">+10</div>
+<div class="text-caption font-caption text-on-primary-container">Clientes reseñados</div>
+</div>
+</div>
+</section>
+<!-- Pain Points Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-primary text-center mb-stack-lg max-w-3xl mx-auto">
+                ¿Te suena familiar alguna de estas situaciones?
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-lg text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-error-container rounded-full flex items-center justify-center mx-auto mb-stack-md">
+<span class="material-symbols-outlined text-error text-3xl">sentiment_dissatisfied</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Incumplimiento</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Obras que se extienden semanas más de lo prometido, causando estrés y desorden.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-lg text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-error-container rounded-full flex items-center justify-center mx-auto mb-stack-md">
+<span class="material-symbols-outlined text-error text-3xl">money_off</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Presupuestos Sorpresa</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Costos ocultos que aparecen a mitad de la obra, desajustando tus finanzas.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-lg text-center hover:-translate-y-1 transition-transform duration-300">
+<div class="w-16 h-16 bg-error-container rounded-full flex items-center justify-center mx-auto mb-stack-md">
+<span class="material-symbols-outlined text-error text-3xl">build</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Mala Calidad</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Acabados mediocres y espacios que no funcionan como esperabas tras la inversión.</p>
+</div>
+</div>
+<div class="mt-stack-lg text-center bg-primary-fixed/30 p-8 rounded-xl border border-primary-fixed-dim inline-block mx-auto w-full max-w-3xl">
+<p class="text-headline-md font-headline-md text-primary mb-4">En DH Construcción, eliminamos estas preocupaciones.</p>
+<p class="text-body-md font-body-md text-on-surface-variant">Trabajamos con cronogramas estrictos, presupuestos transparentes y acabados premium.</p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="servicios">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-primary text-center mb-section-gap">
+                ¿Qué podemos hacer por ti?
+            </h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-gutter mb-section-gap">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-variant rounded flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-[#0f1c2c] mb-4">shower</span>
+<h3 class="text-label-bold font-label-bold text-primary">Baños</h3>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-variant rounded flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-[#0f1c2c] mb-4">countertops</span>
+<h3 class="text-label-bold font-label-bold text-primary">Cocinas</h3>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-variant rounded flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-[#0f1c2c] mb-4">format_paint</span>
+<h3 class="text-label-bold font-label-bold text-primary">Pintura</h3>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-variant rounded flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-[#0f1c2c] mb-4">electric_bolt</span>
+<h3 class="text-label-bold font-label-bold text-primary">Electricidad</h3>
+</div>
+<!-- Service 5 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-variant rounded flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-[#0f1c2c] mb-4">grid_on</span>
+<h3 class="text-label-bold font-label-bold text-primary">Pisos</h3>
+</div>
+<!-- Service 6 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-variant rounded flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-[#0f1c2c] mb-4">architecture</span>
+<h3 class="text-label-bold font-label-bold text-primary">Obras Civiles</h3>
+</div>
+</div>
+<div class="text-center">
+<a class="btn-primary inline-flex px-8 py-4 rounded text-label-bold font-label-bold shadow-lg items-center gap-2" href="#contacto">
+                    Quiero renovar mi espacio <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="proyectos">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-primary text-center mb-stack-md">
+                Proyectos reales. Resultados que hablan solos.
+            </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant text-center mb-section-gap max-w-2xl mx-auto">
+                Explora la calidad de nuestros acabados en espacios residenciales y comerciales en Bogotá.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Large featured item -->
+<div class="md:col-span-2 glass-card rounded-xl overflow-hidden group">
+<div class="relative h-[400px] overflow-hidden">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJQs-M6DzIUTod9EB14dXPVYeH8pZre8PU57J1Dn82FmAgqtVSwtBicCGrCeHrUjuUvu0Rg7SVHLOmOtm7d1PFCHxW0wO0LxyXWg6biJ1czxiY0fo2BjhQQOwmHsF3cgUVBD1X9Dza_he09Bqtq941s3qpMVRsCBoRsC7fYS7YtMr41d0MkI7mixs_XHURAaaTtyqJn3DZa6o9GZdD1FE-HWFhzmOYSNqOYUledHjlXfJjlBIPnO4-_3Ev-V47zvHCVqDE30550BI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<span class="bg-[#0f1c2c] text-white text-caption font-caption px-2 py-1 rounded mb-2 inline-block">Antes y Después</span>
+<h3 class="text-headline-md font-headline-md">Renovación Integral Cocina</h3>
+<p class="text-body-md font-body-md opacity-90"><span class="material-symbols-outlined text-[14px] align-middle">location_on</span> Chicó Alto, Bogotá</p>
+</div>
+</div>
+</div>
+<!-- Smaller items -->
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="relative h-[300px] overflow-hidden">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpee6UPtOfK-Uy3_OqsfSCOIPWhSSXvJBW9YqPVeTH6QKURZRg1h5JM1WsQeZjfaYkHOWRst7VqZktMpQxM6_sBBmaQ_u9P9Rm3flZnTObAgcHRmUZbgs94ro5m96rI7sjDkkGkj7eP0qI1XJBgObYxx_VYCIc-4EWXju-M0eJt4TO-HS4uMy4a4ZAlSA_OfgUoU-YTEMN0xSfKnzUxtLn0AaiD8adOJqMBsZWTIjOc4v1Q_d1PH4BqR-5bbjcTlkj8-OOf0KQbTk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-headline-md font-headline-md">Baño Spa Premium</h3>
+<p class="text-body-md font-body-md opacity-90">Usaquén</p>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden group">
+<div class="relative h-[300px] overflow-hidden">
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdx2t_CCzQc7AgRyPCdtBIiVv1GxWGq-fKbGhY78VGmYIYRYvlUkXL3tdkJvU0BjVn8egcKfl6JJwU_uRkBHS6tjF7v8v023M_CuulgXZFQh_XKxGt1JYUdER_x75ceZWK1D1TgXk6aRze61jNZT6ODy5KLKu1ws08jDMwtJf2fLTJW_TOZA7IWVAaQ7_fKpxowpmSbM3_rcD4VxpfBwOuwGIXVq_V910I2gjdV87vojpq1HyNrDUR85kwRJyftFltfK10CxicAfQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-headline-md font-headline-md">Instalación Pisos de Madera</h3>
+<p class="text-body-md font-body-md opacity-90">Rosales</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Showcase -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-[#0f1c2c] text-white">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="text-headline-lg font-headline-lg mb-stack-lg">
+                Mira cómo transformamos este espacio en menos de 2 semanas
+            </h2>
+<div class="relative w-full aspect-video bg-black/50 rounded-xl border border-white/20 mb-stack-lg overflow-hidden flex items-center justify-center group cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-br from-[#0f1c2c]/80 to-black/80"></div>
+<!-- Placeholder pattern -->
+<div class="absolute inset-0 opacity-10" data-alt="A modern, high-contrast abstract pattern background in dark navy and subtle light grey. The pattern suggests architectural precision and technical planning. The lighting is moody and cinematic, conveying a premium and professional construction brand identity." style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="relative z-10 w-20 h-20 bg-[#FF6B2B] rounded-full flex items-center justify-center transition-transform group-hover:scale-110 shadow-[0_0_30px_rgba(255,107,43,0.4)]">
+<span class="material-symbols-outlined text-4xl text-white ml-2" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<a class="btn-primary inline-flex px-8 py-4 rounded text-label-bold font-label-bold shadow-lg items-center gap-2" href="#contacto">
+                Quiero una transformación así <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="resenas">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-stack-lg">
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest border border-surface-variant px-4 py-2 rounded-full mb-4">
+<img alt="Google" class="h-5 object-contain" data-alt="The official Google logo in its standard colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-RI1NSTBnJf11sF0FsXHA85JSA4u_Cam--gUwX3Oo1StxTol0jeB_JC-YDqNfap0bDN5aV3xmHiJlUhSAKBe3mWTbSQ6HEON2FiR_PU0A_UFKbkjlxdNXmWwJ69vq7Io4_P-iZOn1MMIytKmocKN5G3OxKqWcmcPLAdjeAPME8iBX7rfybGF1FBu0VZ4K5m4K3apPWJFgyCk_HlNL8Y6n_HIM_9xX8opT6QWFeer6XCxvC7kQ00PfrQGy8Dn5R-_ZWthECWxl1SA"/>
+<span class="text-label-bold font-label-bold text-primary">Reseñas</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-primary">
+                    Lo que dicen nuestros clientes
+                </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="glass-card p-6 rounded-lg">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container font-label-bold">MC</div>
+<div>
+<div class="text-label-bold font-label-bold text-primary">María C.</div>
+<div class="flex text-[#FF6B2B] text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant italic">"Excelente servicio. Cumplieron con los tiempos acordados y el acabado del baño quedó espectacular. Muy recomendados en Bogotá."</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-6 rounded-lg">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container font-label-bold">JP</div>
+<div>
+<div class="text-label-bold font-label-bold text-primary">Juan Pablo R.</div>
+<div class="flex text-[#FF6B2B] text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant italic">"La remodelación de mi cocina superó mis expectativas. El equipo fue muy profesional y limpio durante toda la obra."</p>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-card p-6 rounded-lg">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center text-primary-container font-label-bold">AL</div>
+<div>
+<div class="text-label-bold font-label-bold text-primary">Ana L.</div>
+<div class="flex text-[#FF6B2B] text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant italic">"Transparencia en el presupuesto desde el día uno. Cambiamos todos los pisos del apartamento y el resultado es impecable."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-primary-container dark:bg-black w-full" id="contacto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg px-margin-mobile md:px-margin-desktop py-section-gap w-full max-w-7xl mx-auto">
+<div>
+<div class="text-headline-md font-headline-md font-bold text-on-primary dark:text-primary-fixed mb-4">
+                    DH Construcción
+                </div>
+<p class="text-body-md font-body-md text-on-primary-container opacity-80 mb-4">
+                    Expertos en remodelaciones residenciales y comerciales de alto nivel.
+                </p>
+<div class="space-y-2 text-on-primary-container opacity-80 text-body-md">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">location_on</span> Cl. 73 #103-15, Bogotá</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">phone</span> +57 315 8484020</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-label-bold font-label-bold text-on-primary mb-2">Enlaces Rápidos</span>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all" href="#servicios">Servicios</a>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all" href="#proyectos">Proyectos</a>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all" href="#resenas">Reseñas</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-label-bold font-label-bold text-on-primary mb-2">Redes Sociales</span>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all" href="#">Facebook</a>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all" href="#">Instagram</a>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all" href="#">LinkedIn</a>
+<a class="text-body-md font-body-md text-on-primary-container opacity-80 hover:text-secondary-container transition-all flex items-center gap-1" href="#">
+                    WhatsApp <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="border-t border-on-primary-container/20 px-margin-mobile md:px-margin-desktop py-6 text-center">
+<p class="text-caption font-caption text-on-primary-container opacity-80">
+                © 2024 DH Construcción y Remodelaciones. Todos los derechos reservados.
+            </p>
+</div>
+</footer>
+</body></html>
